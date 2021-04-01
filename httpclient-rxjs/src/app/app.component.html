@@ -1,0 +1,39 @@
+<div class="container">
+  <h1>HttpClient-RxJs</h1>
+
+  <div class="card">
+    <div class="form-control">
+      <input type="text" placeholder="Name" [(ngModel)]="todoTitle">
+    </div>
+    <button class="btn" (click)="addTodo()">Add</button>
+    <button class="btn" (click)="loadTodos()">Load Todos</button>
+  </div>
+
+  <hr>
+
+  <p *ngIf="error; else todosPanel" class="error">{{error}}</p>
+
+  <ng-template #todosPanel>
+    <div *ngIf="!loading; else loadingPanel">
+      <div *ngIf="todos.length; else emptyPanel">
+        <div class="card" *ngFor="let todo of todos">
+          <p>
+            <span [class.completed]="todo.completed">{{todo.title | titlecase}}</span>
+            <span>
+          <button class="btn btn-danger" (click)="deleteTodo(todo.id)">Delete</button>
+          <button class="btn" [disabled]="todo.completed" (click)="completeTodo(todo.id)">Complete</button>
+        </span>
+          </p>
+        </div>
+      </div>
+      <ng-template #emptyPanel>
+        <p>N/A</p>
+      </ng-template>
+    </div>
+    <ng-template #loadingPanel>
+      <p>Loading...</p>
+    </ng-template>
+  </ng-template>
+</div>
+
+
