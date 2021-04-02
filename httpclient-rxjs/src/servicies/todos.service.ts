@@ -22,9 +22,9 @@ export class TodosService {
     return this.http.post<Todo>('https://jsonplaceholder.typicode.com/todos', todo, {headers});
   }
 
-  loadTodos(): Observable<Todo[]> {
+  loadTodos(limit: number): Observable<Todo[]> {
     let params = new HttpParams();
-    params = params.append('_limit', '4');
+    params = params.append('_limit', `${limit}`);
 
     return this.http.get<Todo[]>('https://jsonplaceholder.typicode.com/todos', {
       params,

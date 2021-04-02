@@ -7,6 +7,7 @@ import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {AuthInterceptor} from '../servicies/auth.interceptor';
 import {LoggingInterceptor} from '../servicies/logging-interceptor';
+import {ToggleButtonComponent } from './toggle-button/toggle-button.component';
 
 const INTERCEPTOR_PROVIDER: Provider = {
   provide: HTTP_INTERCEPTORS,
@@ -22,7 +23,8 @@ const LOGINTERCEPTOR_PROVIDER: Provider = {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ToggleButtonComponent,
   ],
   imports: [
     BrowserModule,

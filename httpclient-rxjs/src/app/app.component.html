@@ -7,6 +7,8 @@
     </div>
     <button class="btn" (click)="addTodo()">Add</button>
     <button class="btn" (click)="loadTodos()">Load Todos</button>
+    <p>AutoUpdate</p>
+    <toggle-button (changed$)="onChanged($event)"></toggle-button>
   </div>
 
   <hr>
