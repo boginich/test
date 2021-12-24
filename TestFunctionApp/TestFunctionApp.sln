@@ -3,16 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFunctionAppNet48", "TestFunctionApp\TestFunctionAppNet48.csproj", "{759B2236-E7DD-4175-91D8-6EE59FE8C358}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestFunctionAppNet48", "TestFunctionApp\TestFunctionAppNet48.csproj", "{759B2236-E7DD-4175-91D8-6EE59FE8C358}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFunctionAppNetCore31", "FunctionAppCore\TestFunctionAppNetCore31.csproj", "{C1DB6BD9-792B-451D-B82F-A71293BCDDCB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFunctionAppNet5", "TestFunctionAppNet5\TestFunctionAppNet5.csproj", "{FCCB9C00-3B96-4017-8466-3D16F891696C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestFunctionAppNetCore31", "FunctionAppCore\TestFunctionAppNetCore31.csproj", "{C1DB6BD9-792B-451D-B82F-A71293BCDDCB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2023F4E1-E813-4CBB-A6AA-05FEC62E456C}"
 	ProjectSection(SolutionItems) = preProject
 		Postman\Test.postman_collection.json = Postman\Test.postman_collection.json
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestFunctionAppNet5", "TestFunctionAppNet5\TestFunctionAppNet5.csproj", "{E3DD7864-532F-4617-800C-67F17BB3C567}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,10 +28,10 @@ Global
 		{C1DB6BD9-792B-451D-B82F-A71293BCDDCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1DB6BD9-792B-451D-B82F-A71293BCDDCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1DB6BD9-792B-451D-B82F-A71293BCDDCB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FCCB9C00-3B96-4017-8466-3D16F891696C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FCCB9C00-3B96-4017-8466-3D16F891696C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FCCB9C00-3B96-4017-8466-3D16F891696C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FCCB9C00-3B96-4017-8466-3D16F891696C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3DD7864-532F-4617-800C-67F17BB3C567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3DD7864-532F-4617-800C-67F17BB3C567}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3DD7864-532F-4617-800C-67F17BB3C567}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3DD7864-532F-4617-800C-67F17BB3C567}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
