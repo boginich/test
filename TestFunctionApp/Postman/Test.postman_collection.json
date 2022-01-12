@@ -59,6 +59,42 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "QueueTriggerFunction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"test name\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/myqueue-items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"myqueue-items"
+					],
+					"query": [
+						{
+							"key": "myQueueItem",
+							"value": "\"ssss\"",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
