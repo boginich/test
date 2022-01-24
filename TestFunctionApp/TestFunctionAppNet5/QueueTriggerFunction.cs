@@ -6,7 +6,7 @@ namespace TestFunctionAppNet5
     public static class QueueTriggerFunction
     {
         [Function("QueueTriggerFunction")]
-        public static void Run([QueueTrigger("myqueue-items", Connection = "")]
+        public static void Run([QueueTrigger("testqueue", Connection = "")]
             string myQueueItem,
             FunctionContext context)
         {
