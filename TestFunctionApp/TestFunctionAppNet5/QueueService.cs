@@ -1,5 +1,4 @@
 ﻿using System.Threading.Tasks;
-
 using Azure.Storage.Queues;
 
 namespace TestFunctionAppNet5
@@ -8,12 +7,8 @@ namespace TestFunctionAppNet5
     {
         private const string QueueName = "testqueue";
 
-        private readonly string connectionString;
-
-        public QueueService(string connectionString)
-        {
-            this.connectionString = connectionString;
-        }
+        private const string connectionString =
+            "DefaultEndpointsProtocol=https;AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;BlobEndpoint=https://127.0.0.1:10000/devstoreaccount1;QueueEndpoint=https://127.0.0.1:10001/devstoreaccount1;";
 
         public async Task QueueDataAsync(string data)
         {
