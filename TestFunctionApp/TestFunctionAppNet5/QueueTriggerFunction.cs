@@ -11,7 +11,7 @@ namespace TestFunctionAppNet5
             FunctionContext context)
         {
             var logger = context.GetLogger("QueueTriggerFunction");
-            logger.LogInformation($"C# Queue trigger function processed: {myQueueItem}");
+            logger.LogInformation($"QueueTriggerFunction processed: {myQueueItem}");
         }
     }
 }

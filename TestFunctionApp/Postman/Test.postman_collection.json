@@ -11,7 +11,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:7071/api/HttpTriggerFunction?Name=testName",
+					"raw": "http://localhost:7071/api/HttpTriggerFunction?Name=Test Name",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -24,7 +24,7 @@
 					"query": [
 						{
 							"key": "Name",
-							"value": "testName"
+							"value": "Test Name"
 						}
 					]
 				}
