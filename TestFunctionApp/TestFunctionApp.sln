@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestFunctionAppNet5", "TestFunctionAppNet5\TestFunctionAppNet5.csproj", "{E3DD7864-532F-4617-800C-67F17BB3C567}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFunctionAppNet6", "TestFunctionAppNet6\TestFunctionAppNet6.csproj", "{8078062A-226F-4B9B-8AD4-809E2F33F4D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestFunctionAppNet6", "TestFunctionAppNet6\TestFunctionAppNet6.csproj", "{8078062A-226F-4B9B-8AD4-809E2F33F4D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
