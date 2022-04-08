@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "9c13575a-9a00-46aa-8503-ee1984620672",
+		"_postman_id": "5003ca7b-5897-478d-86a4-62dc25ff99aa",
 		"name": "Test",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -8,10 +8,22 @@
 		{
 			"name": "HttpTriggerFunction",
 			"request": {
-				"method": "GET",
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"DevTestUser\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:7071/api/HttpTriggerFunction?Name=Test Name",
+					"raw": "http://localhost:7071/api/HttpTriggerFunction",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -20,12 +32,6 @@
 					"path": [
 						"api",
 						"HttpTriggerFunction"
-					],
-					"query": [
-						{
-							"key": "Name",
-							"value": "Test Name"
-						}
 					]
 				}
 			},
