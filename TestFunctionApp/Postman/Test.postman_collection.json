@@ -101,6 +101,182 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "HttpTriggerFunctionOpenApi",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"DevTestUser\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/HttpTriggerFunctionOpenApi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"HttpTriggerFunctionOpenApi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HttpTriggerSimple",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"test name\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/myqueue-items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"myqueue-items"
+					],
+					"query": [
+						{
+							"key": "myQueueItem",
+							"value": "\"ssss\"",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HttpTriggerWithBlobInput",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"name\":\"ssa\",\"id\":\"1\"}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/HttpTriggerWithBlobInput",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"HttpTriggerWithBlobInput"
+					],
+					"query": [
+						{
+							"key": "myQueueItem",
+							"value": "\"ssss\"",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HttpTriggerWithDependencyInjection",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n    \"id\":42,\r\n    \"name\":\"test name\"\r\n}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/HttpTriggerWithBlobInput",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"HttpTriggerWithBlobInput"
+					],
+					"query": [
+						{
+							"key": "myQueueItem",
+							"value": "\"ssss\"",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HttpTriggerWithMultipleOutputBindings",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n    \"id\":42,\r\n    \"name\":\"test name\"\r\n}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/HttpTriggerWithMultipleOutputBindings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"HttpTriggerWithMultipleOutputBindings"
+					],
+					"query": [
+						{
+							"key": "myQueueItem",
+							"value": "\"ssss\"",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
