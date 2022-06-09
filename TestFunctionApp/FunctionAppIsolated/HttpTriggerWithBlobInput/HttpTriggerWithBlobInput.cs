@@ -17,7 +17,7 @@ public static class HttpTriggerWithBlobInput
         var bookVal = (Book) JsonSerializer.Deserialize(myBlob, typeof(Book));
         var response = req.CreateResponse(HttpStatusCode.OK);
 
-        response.Headers.Add("Date", DateTime.Now.ToShortDateString());
+        response.Headers.Add("Date", DateTime.UtcNow.ToString("r"));
         response.Headers.Add("Content-Type", "text/html; charset=utf-8");
         response.WriteString("HttpTriggerWithBlobInput!");
 

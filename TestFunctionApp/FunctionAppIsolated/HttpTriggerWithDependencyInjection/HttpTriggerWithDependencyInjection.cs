@@ -38,7 +38,7 @@ public class DefaultHttpResponderService : IHttpResponderService
     {
         var response = httpRequest.CreateResponse(HttpStatusCode.OK);
 
-        response.Headers.Add("Date", DateTime.Now.ToShortDateString());
+        response.Headers.Add("Date", DateTime.UtcNow.ToString("r"));
         response.Headers.Add("Content-Type", "text/html; charset=utf-8");
         response.WriteString("HttpTriggerWithDependencyInjection!");
 
